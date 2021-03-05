@@ -7,7 +7,7 @@
  * @FilePath: /action-hooks/src/index.tsx
  * Github: https://github.com/Qolim
  */
-import useAction from './use-action';
+import { useAction } from './use-action';
 
 export {
   useAction
