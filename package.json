@@ -23,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/Qolim/action-hooks/issues"
   },
+  "keywords": [
+    "react",
+    "hooks",
+    "action-state"
+  ],
   "homepage": "https://github.com/Qolim/action-hooks#readme"
 }
