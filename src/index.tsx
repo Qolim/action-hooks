@@ -1,7 +1,7 @@
 /*
  * @Author: LimingQi
  * @Date: 2021-03-05 23:05:33
- * @LastEditTime: 2021-03-05 23:48:10
+ * @LastEditTime: 2021-03-06 00:19:53
  * @LastEditors: LimingQi
  * @Description:入口
  * @FilePath: /action-hooks/src/index.tsx
@@ -9,6 +9,6 @@
  */
 import useAction from './use-action';
 
-export default {
+export {
   useAction
 }
