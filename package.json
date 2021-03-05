@@ -1,0 +1,27 @@
+{
+  "name": "action-hooks",
+  "version": "0.0.1",
+  "description": "hooks with action-state",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ."
+  },
+  "author": "ilim",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.2",
+    "typescript": "^4.2.3"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qolim/action-hooks.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Qolim/action-hooks/issues"
+  },
+  "homepage": "https://github.com/Qolim/action-hooks#readme"
+}
