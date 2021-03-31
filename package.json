@@ -1,6 +1,6 @@
 {
   "name": "action-hooks",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "hooks with action-state",
   "main": "es/index.js",
   "types": "es/index.d.ts",
