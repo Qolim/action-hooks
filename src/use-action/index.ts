@@ -1,13 +1,4 @@
-/*
- * @Author: LimingQi
- * @Date: 2021-03-05 23:07:38
- * @LastEditTime: 2021-03-06 00:26:02
- * @LastEditors: LimingQi
- * @Description: useAction hook
- * @FilePath: /action-hooks/src/use-action/index.ts
- * Github: https://github.com/Qolim
- */
-import * as React from 'react';
+import * as React from "react";
 
 /**
  * 事件-状态 绑定hook
@@ -17,19 +8,13 @@ import * as React from 'react';
  */
 export function useAction<S = undefined, A extends Array<any> = any[]>(
   action: (state: S, ...args: A) => S,
-  defaultState: S,
-): [
-    (...args: A) => void,
-    S
-  ] {
+  defaultState: S
+): [(...args: A) => void, S] {
+  const [state, set_state] = React.useState<S>(defaultState);
 
-  const [state, set_state] = React.useState<S>(defaultState)
+  const actionBack = (...args: A) => {
+    set_state(action(state, ...args));
+  };
 
-  const actionBack = (...args: A) => { set_state(action(state, ...args)) }
-
-  return [
-    actionBack,
-    state
-  ]
-
+  return [actionBack, state];
 }

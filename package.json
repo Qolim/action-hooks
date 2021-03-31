@@ -1,20 +1,24 @@
 {
   "name": "action-hooks",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "hooks with action-state",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "es/index.js",
+  "types": "es/index.d.ts",
+  "module": "es",
   "scripts": {
-    "build": "tsc -p ."
+    "build": "tsc"
   },
   "author": "ilim",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "^17.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "typescript": "^4.2.3"
   },
-  "dependencies": {
-    "react": "^17.0.1"
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
   },
   "repository": {
     "type": "git",
